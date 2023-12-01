@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="119*"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="110*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="lb1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,113,0,3" Grid.RowSpan="2"/>
+        <ListBox x:Name="lb2" Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,112,0,1" Grid.RowSpan="2"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="292"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="292" Grid.Column="1"/>
+        <Label Content="Первая строка" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Вторая строка" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Width="104" Grid.Column="1"/>
+        <Button x:Name="btnInfo" Click="btnInfo_Click" Grid.Column="1" Content="О программе" HorizontalAlignment="Left" Margin="284,22,0,0" VerticalAlignment="Top" Width="106" Grid.Row="3"/>
+        <Button x:Name="btnExit" Click="btnExit_Click" Grid.Column="1" Content="Выход" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="284,55,0,0" Grid.Row="3"/>
+
     </Grid>
 </Window>

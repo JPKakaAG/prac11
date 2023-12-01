@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1ED632F6-29B1-403F-A35F-096F13C313A2}</ProjectGuid>
+    <ProjectGuid>{D2CB845C-BC9F-4765-91A0-85565D139EEA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>prac11</RootNamespace>
     <AssemblyName>prac11</AssemblyName>
@@ -53,6 +53,7 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
